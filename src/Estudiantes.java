@@ -78,7 +78,7 @@ public class Estudiantes extends JFrame{
                 } catch (IOException x) {
                     System.out.println("Error al crear el archivo");
                 }
-            }
+            }//
         });
         BSiguiente.addActionListener(new ActionListener() {
             @Override
