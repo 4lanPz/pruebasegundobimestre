@@ -42,7 +42,7 @@ public class Estudiantes extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 try {
                     //CAMBIAR LA DIRECCION PARA QUE funcione
-                    File archivo = new File("C://Users//POO//Desktop//xd.dat");
+                    File archivo = new File("C://Users//POO//Desktop//alan.dat");
                     FileInputStream fis = new FileInputStream(archivo);
                     DataInputStream dis = new DataInputStream(fis);
                     // Lee datos del archivo
@@ -52,7 +52,7 @@ public class Estudiantes extends JFrame{
                     }
                     dis.close();
                 } catch (IOException x) {
-                    System.out.println("Error al leer el archivo .dat");
+                    System.out.println("Error al leer el archivo");
                 }
             }
         });
@@ -61,7 +61,7 @@ public class Estudiantes extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 try {
                     //CAMBIAR LA DIRECCION PARA QUE funcione
-                    File archivo = new File("C://Users//POO//Desktop//xd.dat");
+                    File archivo = new File("C://Users//POO//Desktop//alan.dat");
                     FileWriter fw = new FileWriter(archivo);
                     BufferedWriter bw = new BufferedWriter(fw);
                     PrintWriter salida = new PrintWriter(bw);
@@ -76,7 +76,7 @@ public class Estudiantes extends JFrame{
                     salida.println("Casado: "+ casadosi + casadono +"\n");
                     salida.close();
                 } catch (IOException x) {
-                    System.out.println("Error al crear el archivo .dat");
+                    System.out.println("Error al crear el archivo");
                 }
             }
         });
